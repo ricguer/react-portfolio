@@ -8,8 +8,8 @@ function App() {
   return (
     <main className="App">
       <Header />
-      <ProjectsSection />
       <SkillsSection />
+      <ProjectsSection />
       <Footer />
     </main>
 

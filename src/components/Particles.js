@@ -14,92 +14,65 @@ function ParticlesBackground() {
                 fullScreen: { enable: true },
                 particles: {
                     number: {
-                        value: 50
+                        value: 80,
+                        density: {
+                            enable: true,
+                            area: 800
+                        }
+                    },
+                    color: {
+                        value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
                     },
                     shape: {
                         type: "circle"
                     },
                     opacity: {
-                        value: 0.5
+                        value: 1
                     },
                     size: {
-                        value: 400,
-                        random: {
-                            enable: true,
-                            minimumValue: 200
-                        }
+                        value: { min: 1, max: 8 }
+                    },
+                    links: {
+                        enable: true,
+                        distance: 150,
+                        color: "#808080",
+                        opacity: 0.4,
+                        width: 1
                     },
                     move: {
                         enable: true,
-                        speed: 10,
-                        direction: "top",
-                        outModes: {
-                            default: "out",
-                            top: "destroy",
-                            bottom: "none"
-                        }
+                        speed: 5,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        outModes: "out"
                     }
                 },
                 interactivity: {
-                    detectsOn: "canvas",
                     events: {
-                        resize: true
+                        onHover: {
+                            enable: true,
+                            mode: "grab"
+                        },
+                        onClick: {
+                            enable: true,
+                            mode: "push"
+                        }
+                    },
+                    modes: {
+                        grab: {
+                            distance: 140,
+                            links: {
+                                opacity: 1
+                            }
+                        },
+                        push: {
+                            quantity: 4
+                        }
                     }
                 },
                 style: {
-                    filter: "blur(50px)"
-                },
-                detectRetina: true,
-                themes: [
-                    {
-                        name: "light",
-                        default: {
-                            value: true,
-                            mode: "light"
-                        },
-                        options: {
-                            background: {
-                                color: "#f7f8ef"
-                            },
-                            particles: {
-                                color: {
-                                    value: ["#5bc0eb", "#fde74c", "#9bc53d", "#e55934", "#fa7921"]
-                                }
-                            }
-                        }
-                    },
-                    {
-                        name: "dark",
-                        default: {
-                            value: true,
-                            mode: "dark"
-                        },
-                        options: {
-                            background: {
-                                color: "#080710"
-                            },
-                            particles: {
-                                color: {
-                                    value: ["#004f74", "#5f5800", "#245100", "#7d0000", "#810c00"]
-                                }
-                            }
-                        }
-                    }
-                ],
-                emitters: {
-                    direction: "top",
-                    position: {
-                        x: 50,
-                        y: 150
-                    },
-                    rate: {
-                        delay: 0.2,
-                        quantity: 2
-                    },
-                    size: {
-                        width: 100,
-                        height: 0
-                    }
+                    filter: "blur(0px)"
                 }
             }}
             init={particlesInit} />

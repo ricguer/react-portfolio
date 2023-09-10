@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from "react";
 import { Paper } from '@mui/material';
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import Particles from './components/Particles';
 import Header from "./components/header/Header";
 import SkillsSection from "./SkillsSection";

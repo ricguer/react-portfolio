@@ -19,12 +19,9 @@ function Copyright() {
     );
 }
 
-// TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
-
 export default function StickyFooter() {
     return (
-        <ThemeProvider theme={defaultTheme}>
+        <footer>
             <Box
                 sx={{
                     display: 'flex',
@@ -53,6 +50,6 @@ export default function StickyFooter() {
                     </Container>
                 </Box>
             </Box>
-        </ThemeProvider>
+        </footer>
     );
 }

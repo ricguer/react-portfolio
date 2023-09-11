@@ -12,13 +12,13 @@ export default function SkillGroup({ skillTitle, firstSkillDesc, secondSkillDesc
                     <Typography variant="h5">{skillTitle}</Typography>
                     <List sx={{ listStyleType: 'disc', pl: 4 }}>
                         <ListItem sx={{ display: 'list-item' }}>
-                            <Typography variant="body2" color="text.secondary">{firstSkillDesc}</Typography>
+                            <Typography variant="body2">{firstSkillDesc}</Typography>
                         </ListItem>
                         <ListItem sx={{ display: 'list-item' }}>
-                            <Typography variant="body2" color="text.secondary">{secondSkillDesc}</Typography>
+                            <Typography variant="body2">{secondSkillDesc}</Typography>
                         </ListItem>
                         <ListItem sx={{ display: 'list-item' }}>
-                            <Typography variant="body2" color="text.secondary">{thirdSkillDesc}</Typography>
+                            <Typography variant="body2">{thirdSkillDesc}</Typography>
                         </ListItem>
                     </List>
                 </Container>

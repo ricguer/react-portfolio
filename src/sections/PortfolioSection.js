@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-import ProjectCard from './components/ProjectCard';
+import ProjectCard from '../components/ProjectCard';
 
-export default function ProjectsSection() {
+export default function PortfolioSection() {
     return (
         <section id="portfolio">
             <Typography variant="h3">Portfolio</Typography>

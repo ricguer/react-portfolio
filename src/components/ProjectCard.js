@@ -15,8 +15,8 @@ export default function ProjectCard({ projectTitle, projectDescription, projectI
                 title="Project Image"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">{projectTitle}</Typography>
-                <Typography variant="body2" color="text.secondary">{projectDescription}</Typography>
+                <Typography gutterBottom variant="h5">{projectTitle}</Typography>
+                <Typography variant="body2">{projectDescription}</Typography>
             </CardContent>
             <CardActions>
                 <Button size="small" href={projectLink}>Learn More</Button>

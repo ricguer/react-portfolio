@@ -2,10 +2,10 @@ import './App.css';
 import React, { useState } from "react";
 import { Paper } from '@mui/material';
 import { ThemeProvider } from "@mui/material/styles";
-import Particles from './components/Particles';
-import Header from "./components/header/Header";
-import SkillsSection from "./SkillsSection";
-import ProjectsSection from "./PortfolioSection";
+import ParticlesBackground from './components/ParticlesBackground';
+import Header from "./components/app-header/Header";
+import SkillsSection from "./sections/SkillsSection";
+import PortfolioSection from "./sections/PortfolioSection";
 import Footer from "./components/Footer";
 import GlobalTheme from "./GlobalTheme";
 
@@ -13,7 +13,7 @@ import GlobalTheme from "./GlobalTheme";
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
@@ -28,17 +28,17 @@ function App() {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        <Paper elevation={0} style={{ position: "absolute", zIndex: "-1", height: "100vh", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Particles />
-          <Paper elevation={5} style={{ zIndex: "-1", height: "100vh", width: "90vw" }}>
+        <ParticlesBackground />
+        <div className="App">
+          <Paper elevation={5} className="App-content-container">
             <Header colorModeContext={ColorModeContext} />
-            <main className="App">
+            <main>
               <SkillsSection />
-              <ProjectsSection />
-              {/* <Footer /> */}
+              <PortfolioSection />
             </main>
+            <Footer />
           </Paper>
-        </Paper>
+        </div>
       </ThemeProvider>
     </ColorModeContext.Provider >
   );

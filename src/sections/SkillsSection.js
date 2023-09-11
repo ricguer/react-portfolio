@@ -1,7 +1,8 @@
 import Stack from "@mui/material/Stack";
 import { Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import SkillGroup from "./components/SkillsGroup";
+import SkillGroup from "../components/skills/SkillsGroup";
+import SkillLogos from "../components/skills/SkillsLogos";
 
 export default function SkillsSection() {
     return (
@@ -45,6 +46,7 @@ export default function SkillsSection() {
                                         scale web applications.`}
                 />
             </Stack>
+            <SkillLogos />
         </section>
     )
 };

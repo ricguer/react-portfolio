@@ -7,8 +7,8 @@ export default function Header({ colorModeContext }) {
         <header>
             <Navigation colorModeContext={colorModeContext} />
             <Typography variant="h1">Ricardo Guerra</Typography>
-            <Typography variant="h2">Software Engineer</Typography>
-            <Typography variant="h4">Embedded Systems | Desktop Applications | Full-Stack Web Applications</Typography>
+            <Typography variant="h3">Software Engineer</Typography>
+            <Typography variant="h5">Embedded Systems | Desktop Applications | Full-Stack Web Applications</Typography>
         </header>
     );
 };

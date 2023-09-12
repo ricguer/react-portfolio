@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
-import { Paper } from '@mui/material';
+import { Paper, Stack } from '@mui/material';
 import { ThemeProvider } from "@mui/material/styles";
 import ParticlesBackground from './components/ParticlesBackground';
 import Header from "./components/app-header/Header";
@@ -30,14 +30,13 @@ function App() {
       <ThemeProvider theme={theme}>
         <ParticlesBackground />
         <div className="App">
-          <Paper elevation={5} className="App-content-container">
+          <Paper className="App-background-overlay" elevation={5} />
+          <Stack className="App-main-stack">
             <Header colorModeContext={ColorModeContext} />
-            <main>
-              <SkillsSection />
-              <PortfolioSection />
-            </main>
+            <SkillsSection />
+            <PortfolioSection />
             <Footer />
-          </Paper>
+          </Stack>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider >

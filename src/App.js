@@ -34,11 +34,13 @@ function App() {
         <div className="App">
           <Stack className="App-main-stack" spacing={5}>
             <Header className="App-header" colorModeContext={ColorModeContext} />
-            <AboutMeSection />
-            <PortfolioSection />
-            <ResumeSection />
-            <ContactSection />
-            <Footer />
+            <div style={{ paddingTop: "64px" }}>
+              <AboutMeSection />
+              <PortfolioSection />
+              <ResumeSection />
+              <ContactSection />
+              <Footer />
+            </div>
           </Stack>
         </div>
       </ThemeProvider>

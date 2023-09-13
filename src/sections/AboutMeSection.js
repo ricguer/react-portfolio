@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 
 export default function AboutMeSection() {
     return (
-        <section id="aboutMeSection">
+        <section id="aboutMeSection" style={{ paddingTop: "64px" }}>
             <Typography gutterBottom variant="h3">About Me</Typography>
             <Typography variant="h6">
                 I am a software engineer with a passion for creating

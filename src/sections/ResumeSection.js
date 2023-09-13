@@ -6,7 +6,7 @@ import ResumeLogos from "../components/resume/ResumeLogos";
 
 export default function ResumeSection() {
     return (
-        <section id="skills">
+        <section id="resumeSection" style={{ paddingTop: "64px" }}>
             <Typography gutterBottom variant="h3">Skills</Typography>
             <Stack
                 direction="row"

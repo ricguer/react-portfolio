@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/portfolio/ProjectCard';
 import images_projectSnippets from "../assets/images/images_projectSnippets";
 
 export default function PortfolioSection() {
     return (
-        <section id="portfolio">
+        <section id="portfolioSection" style={{ paddingTop: "64px" }}>
             <Typography gutterBottom variant="h3">Portfolio</Typography>
             <Grid container spacing={5} justifyContent={"center"} alignItems={"center"}>
                 <Grid>

@@ -1,19 +1,21 @@
 import Stack from "@mui/material/Stack";
 import { Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import SkillGroup from "../components/skills/SkillsGroup";
-import SkillLogos from "../components/skills/SkillsLogos";
+import ResumeGroup from "../components/resume/ResumeGroup";
+import ResumeLogos from "../components/resume/ResumeLogos";
 
-export default function SkillsSection() {
+export default function ResumeSection() {
     return (
         <section id="skills">
-            <Typography variant="h3">Skills</Typography>
+            <Typography gutterBottom variant="h3">Skills</Typography>
             <Stack
                 direction="row"
                 divider={<Divider orientation="vertical" flexItem />}
-                spacing={2}
+                paddingBottom={5}
+                flexWrap="wrap"
+                justifyContent="space-evenly"
             >
-                <SkillGroup
+                <ResumeGroup
                     skillTitle={"Embedded Software Engineering"}
                     firstSkillDesc={`Experienced in developing low-level C/C++ drivers for
                                         microcontrollers custom hardware peripherals.`}
@@ -23,7 +25,7 @@ export default function SkillsSection() {
                                         using the Yocto Project environment and developing
                                         embedded applications using the Qt/QML framework.`}
                 />
-                <SkillGroup
+                <ResumeGroup
                     skillTitle={"Desktop Application Development"}
                     firstSkillDesc={`Skilled in designing, developing, and debugging Windows
                                         and Linux desktop applications.`}
@@ -33,7 +35,7 @@ export default function SkillsSection() {
                                         desktop applications that require secure connections
                                         to personal, local, or wide area networks.`}
                 />
-                <SkillGroup
+                <ResumeGroup
                     skillTitle={"Full-Stack Web Application Development"}
                     firstSkillDesc={`Proficient in legacy and contemporary front-end and back-end
                                         frameworks such as jQuery, React, Bootstrap, Bulma, and
@@ -46,7 +48,7 @@ export default function SkillsSection() {
                                         scale web applications.`}
                 />
             </Stack>
-            <SkillLogos />
+            <ResumeLogos />
         </section>
     )
 };

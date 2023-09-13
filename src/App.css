@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -17,14 +17,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white; */
-  position: absolute;
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .App-background {
   position: absolute;
-  z-index: -2;
-  height: 100%;
-  width: 100%;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
 }
 
 #tsparticles {
@@ -46,13 +48,13 @@
 }
 
 .App-main-stack {
-  position: absolute;
-  width: 80vw;
+  position: relative;
+  width: 100vw;
   height: 100vh;
-  z-index: 2;
+
 }
 
-.skillsLogos {
+.resumeLogos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -60,7 +62,7 @@
   width: 100%;
 }
 
-.skillsLogos > * {
+.resumeLogos > * {
   margin: 10px;
 }
 

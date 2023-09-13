@@ -1,13 +1,15 @@
 import './App.css';
-import React, { useState } from "react";
-import { Paper, Stack } from '@mui/material';
+import React, { useRef, useState } from "react";
+import { Stack } from '@mui/material';
 import { ThemeProvider } from "@mui/material/styles";
 import ParticlesBackground from './components/ParticlesBackground';
 import Header from "./components/app-header/Header";
-import SkillsSection from "./sections/SkillsSection";
 import PortfolioSection from "./sections/PortfolioSection";
+import ResumeSection from "./sections/ResumeSection";
+import ContactSection from "./sections/ContactSection";
 import Footer from "./components/Footer";
 import GlobalTheme from "./GlobalTheme";
+import AboutMeSection from './sections/AboutMeSection';
 
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
@@ -30,11 +32,12 @@ function App() {
       <ThemeProvider theme={theme}>
         <ParticlesBackground />
         <div className="App">
-          <Paper className="App-background-overlay" elevation={5} />
-          <Stack className="App-main-stack">
-            <Header colorModeContext={ColorModeContext} />
-            <SkillsSection />
+          <Stack className="App-main-stack" spacing={5}>
+            <Header className="App-header" colorModeContext={ColorModeContext} />
+            <AboutMeSection />
             <PortfolioSection />
+            <ResumeSection />
+            <ContactSection />
             <Footer />
           </Stack>
         </div>

@@ -4,19 +4,23 @@ import { Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import ResumeGroup from "../resume/ResumeGroup";
 import ResumeLogos from "../resume/ResumeLogos";
+import Button from "@mui/material/Button";
+
 
 
                                                                 /* ==================== COMPONENT ===================== */
 export default function ResumeSection() {
     return (
         <section id="resumeSection" style={{ paddingTop: "64px" }}>
-            <Typography gutterBottom variant="h3">Skills</Typography>
+            <Typography gutterBottom variant="h3">Resume</Typography>
+            <Button color="inherit" variant="contained" sx={{
+                marginBottom: '2rem',
+            }}>Download Full Resume</Button>
             <Stack
                 direction="row"
                 divider={<Divider orientation="vertical" flexItem />}
                 paddingBottom={5}
                 flexWrap="wrap"
-                justifyContent="space-evenly"
             >
                 <ResumeGroup
                     skillTitle={"Embedded Software Engineering"}
@@ -51,6 +55,7 @@ export default function ResumeSection() {
                                         scale web applications.`}
                 />
             </Stack>
+            <Typography gutterBottom variant="h4">Skills Overview</Typography>
             <ResumeLogos />
         </section>
     )

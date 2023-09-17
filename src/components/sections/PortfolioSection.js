@@ -61,9 +61,9 @@ export default function PortfolioSection() {
                     <ProjectCard
                         projectTitle="React Portfolio"
                         projectDescription="Software engineering portfolio built with React. This portfolio is a single page application that uses the Materials UI library and React components to render the page."
-                        projectImage="https://picsum.photos/200/300"
+                        projectImage={images_projectSnippets[5].src}
                         projectLink="https://github.com/ricguer/react-portfolio"
-                        projectdeployedlink="https://www.google.com"
+                        projectdeployedlink="https://ricguer.github.io/react-portfolio/"
                     />
                 </Grid>
             </Grid>

@@ -11,18 +11,18 @@ export default function ResumeGroup({ skillTitle, firstSkillDesc, secondSkillDes
         <article>
             <Container sx={{
                 padding: '1rem',
-                margin: '1rem'
+                margin: '1rem',
             }}>
-                <Typography variant="h4">{skillTitle}</Typography>
+                <Typography variant="h5">{skillTitle}</Typography>
                 <List sx={{ listStyleType: 'disc', pl: 4 }}>
                     <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant="h6">{firstSkillDesc}</Typography>
+                        <Typography variant="body1">{firstSkillDesc}</Typography>
                     </ListItem>
                     <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant="h6">{secondSkillDesc}</Typography>
+                        <Typography variant="body1">{secondSkillDesc}</Typography>
                     </ListItem>
                     <ListItem sx={{ display: 'list-item' }}>
-                        <Typography variant="h6">{thirdSkillDesc}</Typography>
+                        <Typography variant="body1">{thirdSkillDesc}</Typography>
                     </ListItem>
                 </List>
             </Container>

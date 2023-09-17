@@ -49,7 +49,7 @@ function App() {
           <Stack className="App-main-stack" spacing={5}>
             <Navigation />
             <Header className="App-header" />
-            <div style={{ paddingTop: "64px", paddingLeft: "10%", paddingRight: "10%" }}>
+            <div style={{ paddingTop: "64px" }}>
               <AboutMeSection />
               <PortfolioSection />
               <ResumeSection />

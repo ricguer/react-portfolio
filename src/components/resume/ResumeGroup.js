@@ -1,21 +1,15 @@
+                                                                /* ===================== IMPORTS ====================== */
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
+
+                                                                /* ====================== COMPONENT =================== */
 export default function ResumeGroup({ skillTitle, firstSkillDesc, secondSkillDesc, thirdSkillDesc }) {
     return (
         <article>
             <Container sx={{
-                // display: 'flex',
-                // flexDirection: 'column',
-                // alignItems: 'center',
-                // justifyContent: 'center',
-                // textAlign: 'center',
-                // width: '100%',
-                // maxWidth: '3%',
-                // height: '100%',
-                // maxHeight: '500px',
                 padding: '1rem',
                 margin: '1rem'
             }}>

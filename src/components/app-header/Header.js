@@ -1,11 +1,12 @@
+                                                                /* ====================== IMPORTS ===================== */
 import React from "react";
 import Typography from '@mui/material/Typography';
-import Navigation from "./Navigation.js";
 
-export default function Header({ colorModeContext }) {
+
+                                                                /* ====================== COMPONENT =================== */
+export default function Header() {
     return (
-        <header>
-            <Navigation colorModeContext={colorModeContext} />
+        <header id="header">
             <div className="App-header">
                 <Typography variant="h1">Ricardo Guerra</Typography>
                 <Typography variant="h3">Software Engineer</Typography>

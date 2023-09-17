@@ -16,7 +16,14 @@ const images_skillsLogos_embedded_desktop = [
     { src: require("./skillsLogos/qt-original.png"), title: "Qt", description: "Qt" }
 ];
 
-const images_skillsLogos = images_skillsLogos_embedded_desktop.concat(images_skillsLogos_web);
+const images_skillsLogos_database = [
+    { src: require("./skillsLogos/mysql-line.png"), title: "MySQL", description: "MySQL" },
+    { src: require("./skillsLogos/mongodb-164.png"), title: "MongoDB", description: "MongoDB" }
+]
+
+const images_skillsLogos = images_skillsLogos_embedded_desktop
+    .concat(images_skillsLogos_web)
+    .concat(images_skillsLogos_database);
 
 for (let i = 0; i < images_skillsLogos.length; i++) {
     images_skillsLogos[i].id = i + 1;

@@ -1,17 +1,21 @@
+                                                                /* ===================== IMPORTS ====================== */
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import ThemeToggle from "./ThemeToggle.js";
+import ThemeToggle from "./app-header/ThemeToggle.js";
 import React, { useState } from "react";
 
-export default function Navigation({ colorModeContext }) {
-    const [activeButton, setActiveButton] = useState(null);
 
+                                                                /* ====================== COMPONENT ====================== */
+export default function Navigation() {
+    const [activeButton, setActiveButton] = useState(null);     /* State of active button                                  */
+
+                                                                /* Function to handle scroll to section                    */
     const handleClickScroll = (sectionId, buttonName) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-            setActiveButton(buttonName);
+            element.scrollIntoView({ behavior: "smooth" });     /* Scroll to section                                      */
+            setActiveButton(buttonName);                        /* Set active button                                      */
         }
     };
 
@@ -21,7 +25,13 @@ export default function Navigation({ colorModeContext }) {
                 <Toolbar style={{ justifyContent: "center" }}>
                     <Button
                         color="inherit"
-                        onClick={() => handleClickScroll("aboutMeSection", "About Me")}
+                        onClick={() => {
+                            const element = document.getElementById("header");
+                            if (element) {
+                                element.scrollIntoView({ behavior: "smooth" });
+                                setActiveButton("About Me");
+                            }
+                        }}
                         style={{ fontWeight: activeButton === "About Me" ? 'bold' : 'normal' }}
                     >
                         About Me
@@ -48,7 +58,7 @@ export default function Navigation({ colorModeContext }) {
                         Contact Me
                     </Button>
                     <div style={{ position: "absolute", right: 10 }}>
-                        <ThemeToggle colorModeContext={colorModeContext} />
+                        <ThemeToggle />
                     </div>
                 </Toolbar>
             </AppBar>

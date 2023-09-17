@@ -1,3 +1,4 @@
+                                                                /* ===================== IMPORTS ====================== */
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,7 +8,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 
-export default function ProjectCard({ projectTitle, projectDescription, projectImage, projectLink, projectdeployedlink }) {
+
+                                                                /* ==================== COMPONENT ===================== */
+export default function ProjectCard({ projectTitle, 
+                                      projectDescription, 
+                                      projectImage, 
+                                      projectLink, 
+                                      projectdeployedlink }) {
     return (
         <Card sx={{ maxWidth: 400 }}>
             <CardMedia

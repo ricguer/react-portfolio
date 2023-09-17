@@ -1,51 +1,66 @@
+                                                                /* ===================== IMPORTS ====================== */
 import './App.css';
-import React, { useRef, useState } from "react";
-import { Stack } from '@mui/material';
-import { ThemeProvider } from "@mui/material/styles";
+import React from "react";
+import { Stack, createTheme } from '@mui/material';
 import ParticlesBackground from './components/ParticlesBackground';
+
+                                                                /* -------------------- COMPONENTS -------------------- */
+import Navigation from "./components/Navigation";
 import Header from "./components/app-header/Header";
-import PortfolioSection from "./sections/PortfolioSection";
-import ResumeSection from "./sections/ResumeSection";
-import ContactSection from "./sections/ContactSection";
+import AboutMeSection from './components/sections/AboutMeSection';
+import PortfolioSection from "./components/sections/PortfolioSection";
+import ResumeSection from "./components/sections/ResumeSection";
+import ContactSection from "./components/sections/ContactSection";
 import Footer from "./components/Footer";
-import GlobalTheme from "./GlobalTheme";
-import AboutMeSection from './sections/AboutMeSection';
+
+                                                                /* ---------------------- THEMES ---------------------- */
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { darkTheme } from "./themes/dark";
+import { lightTheme } from "./themes/light";
+import { ColorContext } from "./ColorContext";
 
 
-const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
-
+                                                                /* ====================== APP ========================= */
 function App() {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = React.useState("dark");               /* State of application theme                           */
+
+                                                                /* Theme toggle function                                */
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
         setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-      }
+      },
     }),
     []
   );
 
-  const theme = React.useMemo(() => GlobalTheme(mode), [mode]);
+                                                                /* Theme creation                                       */
+  const theme = React.useMemo(
+    () => createTheme(mode === "light" ? lightTheme : darkTheme),
+    [mode]
+  );
 
   return (
-    <ColorModeContext.Provider value={colorMode}>
+    <ColorContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
+        <CssBaseline enableColorScheme />
         <ParticlesBackground />
         <div className="App">
           <Stack className="App-main-stack" spacing={5}>
-            <Header className="App-header" colorModeContext={ColorModeContext} />
-            <div style={{ paddingTop: "64px" }}>
+            <Navigation />
+            <Header className="App-header" />
+            <div style={{ paddingTop: "64px", paddingLeft: "10%", paddingRight: "10%" }}>
               <AboutMeSection />
               <PortfolioSection />
               <ResumeSection />
               <ContactSection />
-              <Footer />
             </div>
+            <Footer />
           </Stack>
         </div>
       </ThemeProvider>
-    </ColorModeContext.Provider >
-  );
-}
+    </ColorContext.Provider>
+  )
+};
 
 export default App;

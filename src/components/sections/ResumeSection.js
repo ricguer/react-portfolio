@@ -1,9 +1,12 @@
+                                                                /* ===================== IMPORTS ====================== */
 import Stack from "@mui/material/Stack";
 import { Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import ResumeGroup from "../components/resume/ResumeGroup";
-import ResumeLogos from "../components/resume/ResumeLogos";
+import ResumeGroup from "../resume/ResumeGroup";
+import ResumeLogos from "../resume/ResumeLogos";
 
+
+                                                                /* ==================== COMPONENT ===================== */
 export default function ResumeSection() {
     return (
         <section id="resumeSection" style={{ paddingTop: "64px" }}>

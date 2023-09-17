@@ -1,11 +1,15 @@
+                                                                /* ===================== IMPORTS ====================== */
 import { useState } from "react";
 import { TextField, Button, Typography, Box } from "@mui/material";
 
-export default function ContactSection() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
 
+                                                                /* ====================== COMPONENT =================== */
+export default function ContactSection() {
+    const [name, setName] = useState("");                       /* State variables - name                               */  
+    const [email, setEmail] = useState("");                     /* State variables - email                              */
+    const [message, setMessage] = useState("");                 /* State variables - message                            */
+
+                                                                /* Event handler for form submission                    */
     const handleSubmit = (e) => {
         e.preventDefault();
     };

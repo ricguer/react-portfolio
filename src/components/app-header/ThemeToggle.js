@@ -1,18 +1,24 @@
+                                                                /* ===================== IMPORTS ====================== */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import IconButton from "@mui/material/IconButton";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { Brightness4 as LightIcon } from "@mui/icons-material";
+import { Brightness7 as DarkIcon } from "@mui/icons-material";
+import { ColorContext } from "../../ColorContext";
 
-function ThemeToggle({ colorModeContext }) {
-    const theme = useTheme();
-    const colorMode = React.useContext(colorModeContext);
+
+                                                                /* ====================== COMPONENT =================== */
+function ThemeToggle() {
+    const theme = useTheme();                                   /* Theme object                                         */
+    const colorMode = React.useContext(ColorContext);           /* Color mode context                                   */
 
     return (
         <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-            {theme.palette.mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+            {theme.palette.mode === "dark" ? <LightIcon /> : <DarkIcon />}
         </IconButton>
     );
 }
 
+
+                                                                /* ====================== EXPORT ====================== */
 export default ThemeToggle;

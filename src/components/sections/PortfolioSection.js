@@ -1,9 +1,12 @@
+                                                                /* ===================== IMPORTS ====================== */
 import * as React from 'react';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-import ProjectCard from '../components/portfolio/ProjectCard';
-import images_projectSnippets from "../assets/images/images_projectSnippets";
+import ProjectCard from '../portfolio/ProjectCard';
+import images_projectSnippets from "../../assets/images/images_projectSnippets";
 
+
+                                                                /* ====================== COMPONENT =================== */
 export default function PortfolioSection() {
     return (
         <section id="portfolioSection" style={{ paddingTop: "64px" }}>

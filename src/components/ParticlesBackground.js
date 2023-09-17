@@ -1,7 +1,10 @@
+                                                                /* ====================== IMPORT ====================== */
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
+
+                                                                /* ====================== COMPONENT ====================== */
 function ParticlesBackground() {
     const particlesInit = useCallback(main => {
         loadFull(main);
@@ -79,4 +82,5 @@ function ParticlesBackground() {
     );
 }
 
+                                                                /* ====================== EXPORT ====================== */
 export default ParticlesBackground;

@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f1e47a52.css",
-    "main.js": "/react-portfolio/static/js/main.ea874282.js",
+    "main.js": "/react-portfolio/static/js/main.dd5ab87c.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/yumster.png": "/react-portfolio/static/media/yumster.4a66ff5f44a983fdc86f.png",
+    "static/media/portfolio-screenshot.png": "/react-portfolio/static/media/portfolio-screenshot.b326bcc424bd48523394.png",
     "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.3e7ff0ccd8ff56cca327.png",
     "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.59646c2436d56846868f.png",
     "static/media/random-password-generator.png": "/react-portfolio/static/media/random-password-generator.3b0dabf88fbd6e8adec5.png",
@@ -28,11 +29,11 @@
     "static/media/source-sans-pro-cyrillic-ext-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-cyrillic-ext-400-normal.de95c5209ef26bf69ccf.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.f1e47a52.css.map": "/react-portfolio/static/css/main.f1e47a52.css.map",
-    "main.ea874282.js.map": "/react-portfolio/static/js/main.ea874282.js.map",
+    "main.dd5ab87c.js.map": "/react-portfolio/static/js/main.dd5ab87c.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1e47a52.css",
-    "static/js/main.ea874282.js"
+    "static/js/main.dd5ab87c.js"
   ]
 }

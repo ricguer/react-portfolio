@@ -4,6 +4,7 @@ const images_projectSnippets = [
     { src: require("./projectSnippets/work-day-scheduler.png"), title: "Work Day Scheduler", description: "Work Day Scheduler" },
     { src: require("./projectSnippets/random-password-generator.png"), title: "Random Password Generator", description: "Random Password Generator" },
     { src: require("./projectSnippets/weather-dashboard.png"), title: "Weather Dashboard", description: "Weather Dashboard" },
+    { src: require("./portfolio-screenshot.png"), title: "Portfolio", description: "Portfolio"}
 ]
 
 for (let i = 0; i < images_projectSnippets.length; i++) {

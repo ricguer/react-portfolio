@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.f1e47a52.css",
+    "main.js": "/react-portfolio/static/js/main.ea874282.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/yumster.png": "/react-portfolio/static/media/yumster.4a66ff5f44a983fdc86f.png",
+    "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.3e7ff0ccd8ff56cca327.png",
+    "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.59646c2436d56846868f.png",
+    "static/media/random-password-generator.png": "/react-portfolio/static/media/random-password-generator.3b0dabf88fbd6e8adec5.png",
+    "static/media/source-sans-pro-latin-ext-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-latin-ext-400-normal.185cedfb4e64a9a8801a.woff",
+    "static/media/code-quiz.png": "/react-portfolio/static/media/code-quiz.6902e28da3fc12d486a6.png",
+    "static/media/source-sans-pro-latin-ext-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-latin-ext-400-normal.23e9c5217d09910f51ad.woff2",
+    "static/media/source-sans-pro-latin-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-latin-400-normal.7a5ba508b998fd7044ed.woff",
+    "static/media/react-logo192.png": "/react-portfolio/static/media/react-logo192.2976054ea59997800160.png",
+    "static/media/source-sans-pro-latin-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-latin-400-normal.1402accbefdec6a25762.woff2",
+    "static/media/mysql-line.png": "/react-portfolio/static/media/mysql-line.dee131f69c5b3bcdd427.png",
+    "static/media/figma-original.png": "/react-portfolio/static/media/figma-original.de1aedc8776dcc9565da.png",
+    "static/media/mongodb-164.png": "/react-portfolio/static/media/mongodb-164.2364ba105fc6f24347fd.png",
+    "static/media/source-sans-pro-cyrillic-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-cyrillic-400-normal.a00a7030792ec450d68c.woff",
+    "static/media/source-sans-pro-greek-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-greek-400-normal.3c06b5e22c42ade5562f.woff",
+    "static/media/source-sans-pro-cyrillic-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-cyrillic-400-normal.153bee8d873292f9df39.woff2",
+    "static/media/source-sans-pro-greek-ext-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-greek-ext-400-normal.7a64c855edb8d403283b.woff",
+    "static/media/source-sans-pro-vietnamese-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-vietnamese-400-normal.ed0bf5e1a4bd41349850.woff",
+    "static/media/source-sans-pro-greek-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-greek-400-normal.9c7d72dcc7a044db07b1.woff2",
+    "static/media/source-sans-pro-cyrillic-ext-400-normal.woff": "/react-portfolio/static/media/source-sans-pro-cyrillic-ext-400-normal.3fe9e8e4c00e9124b9c7.woff",
+    "static/media/source-sans-pro-greek-ext-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-greek-ext-400-normal.1b1cb10170f2616853f0.woff2",
+    "static/media/source-sans-pro-vietnamese-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-vietnamese-400-normal.540007fe6de95f52230e.woff2",
+    "static/media/source-sans-pro-cyrillic-ext-400-normal.woff2": "/react-portfolio/static/media/source-sans-pro-cyrillic-ext-400-normal.de95c5209ef26bf69ccf.woff2",
+    "index.html": "/react-portfolio/index.html",
+    "main.f1e47a52.css.map": "/react-portfolio/static/css/main.f1e47a52.css.map",
+    "main.ea874282.js.map": "/react-portfolio/static/js/main.ea874282.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1e47a52.css",
+    "static/js/main.ea874282.js"
+  ]
+}
